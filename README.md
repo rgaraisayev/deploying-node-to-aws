@@ -29,5 +29,5 @@
   * Click Load, add this For ex. ubuntu@mydns then save
   
 ## STEP 3 (Meet the ubuntu)
-  * Install Nodejs, Mongodb, Ngnix
+  * Install Nodejs, Mongodb, Ngnix, pm2
   * If you don have idea to install, type "How to install ...." to google, it will be installed
