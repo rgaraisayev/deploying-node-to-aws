@@ -29,8 +29,16 @@
   * Click Load, add this For ex. ubuntu@mydns then save
   
 ## STEP 3 (Meet the ubuntu)
-  * Install Nodejs, Mongodb, Ngnix, pm2(using npm)
+  * Install Nodejs, NPM, Mongodb, Ngnix, pm2(using npm)
   * If you don have idea to install, type "How to install ...." to google, it will be installed
+  ### NPM, NODEJS
+    * `sudo apt-get install npm`
+    * `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -` // 10.x is the version, you can replace with latest
+    * `sudo apt-get install -y nodejs`
+  ### pm2
+    * `npm install pm2 -g`
+  ### Mongo db
+    * Follow this tutorial [install mongo](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
 ## STEP 4 (security things(optional))
   * Create seperate user for this project
