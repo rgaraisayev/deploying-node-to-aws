@@ -70,4 +70,7 @@
   * PM2 
     * By default Node app uses only one CPU core. Use ecosystem config to distribute load
       * Example config (here)[#]
+    * Automatically start on startup of server
+      * type `pm2 startup` then follow the instructions given by terminal
+      * keep in mind, for every linux user, pm2 save list located in their home folder
   
