@@ -29,11 +29,20 @@
   * Click Load, add this For ex. ubuntu@mydns then save
   
 ## STEP 3 (Meet the ubuntu)
-  * Install Nodejs, Mongodb, Ngnix, pm2
+  * Install Nodejs, Mongodb, Ngnix, pm2(using npm)
   * If you don have idea to install, type "How to install ...." to google, it will be installed
 
 ## STEP 4 (security things(optional))
   * Create seperate user for this project
-  * Google how to create user in ubuntu and you are done
+  * We need create a user in linux, then we create a key-pair to access it using ssh client
+  * First: login to ubuntu, and type sudo adduser replace_this_name --disabled-password
+  * Then we go to AWS console, and create new Key-Pair (on the sidebar)
+  * We download that .pem file, then open PuttyGen and load this file there.
+  * We will see public key starting like this 'ssh-...', copy that
+  * Then follow this tutorial: [this](https://aws.amazon.com/premiumsupport/knowledge-center/new-user-accounts-linux-instance/)
+  * Then like we did for ubuntu user, we just open Putty and browse .ppk file and save session, and connect.
+  * NOTE: We dont wont have password for new user, but you can set it later if you want, (login to ubuntu user, and set password to new user)
+  * If you want to restrict access to any home folder of users for other users, login to ubuntu user, and type sudo 
+  `chmod 0750 /home/username`, noone can read that folder except with privileged ones.
   
-## Tobecont
+## STEP 5 
