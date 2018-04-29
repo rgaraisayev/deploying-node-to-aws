@@ -61,7 +61,9 @@
   * MONGODB -> /etc/mongod.conf
     * To enable remote access comment bindIp (if above version 3.6.4 also add bindIpAll: true)
       * config file (here)[#]
-    * export ad inport bson files use mongodump and mongorestore(supply port and host)
+    * Automatically start on startup of server
+      * `sudo systemctl enable mongod.service`
+    * export and import bson files use mongodump and mongorestore(supply port and host)
   * Nginx
     * Listen to 80 port and redirect traffic to your local apps by url
       * example conf (here)[#]
