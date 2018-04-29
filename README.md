@@ -35,14 +35,14 @@
     * sudo apt-get install npm
     * curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - // 10.x is the version, you can replace with latest
     * sudo apt-get install -y nodejs
-  ### pm2
+  * pm2
     * npm install pm2 -g
     * Use ecosystem. Example config (here)[#]
-  ### Mongo db
+  * Mongo db
     * Follow this tutorial [install mongo](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
-  ### NGINX SERVER (for reverse proxy)
-    * (follow this tutorial)[https://www.nginx.com/resources/wiki/start/topics/tutorials/install/]
-    * (And read begginners guide to learn a bit of using it)[https://nginx.org/en/docs/beginners_guide.html]
+  * NGINX SERVER (for reverse proxy)
+    * [follow this tutorial](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
+    * [And read begginners guide to learn a bit of using it](https://nginx.org/en/docs/beginners_guide.html)
 
 ## STEP 4 (security things(optional))
   * Create seperate user for this project
