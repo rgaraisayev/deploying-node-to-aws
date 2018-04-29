@@ -32,13 +32,17 @@
   * Install Nodejs, NPM, Mongodb, Ngnix, pm2(using npm)
   * If you don have idea to install, type "How to install ...." to google, it will be installed
   ### NPM, NODEJS
-    * `sudo apt-get install npm`
-    * `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -` // 10.x is the version, you can replace with latest
-    * `sudo apt-get install -y nodejs`
+    * sudo apt-get install npm
+    * curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - // 10.x is the version, you can replace with latest
+    * sudo apt-get install -y nodejs
   ### pm2
-    * `npm install pm2 -g`
+    * npm install pm2 -g
+    * Use ecosystem. Example config (here)[#]
   ### Mongo db
     * Follow this tutorial [install mongo](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+  ### NGINX SERVER (for reverse proxy)
+    * (follow this tutorial)[https://www.nginx.com/resources/wiki/start/topics/tutorials/install/]
+    * (And read begginners guide to learn a bit of using it)[https://nginx.org/en/docs/beginners_guide.html]
 
 ## STEP 4 (security things(optional))
   * Create seperate user for this project
@@ -53,4 +57,15 @@
   * If you want to restrict access to any home folder of users for other users, login to ubuntu user, and type sudo 
   `chmod 0750 /home/username`, noone can read that folder except with privileged ones.
   
-## STEP 5 
+## STEP 5 (Configuration files)
+  * MONGODB -> /etc/mongod.conf
+    * To enable remote access comment bindIp (if above version 3.6.4 also add bindIpAll: true)
+      * config file (here)[#]
+    * export ad inport bson files use mongodump and mongorestore(supply port and host)
+  * Nginx
+    * Listen to 80 port and redirect traffic to your local apps by url
+      * example conf (here)[#]
+  * PM2 
+    * By default Node app uses only one CPU core. Use ecosystem config to distribute load
+      * Example config (here)[#]
+  
