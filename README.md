@@ -67,10 +67,10 @@
     * export and import bson files use mongodump and mongorestore(supply port and host)
   * Nginx
     * Listen to 80 port and redirect traffic to your local apps by url
-      * example conf (here)[#]
+      * example conf [here](configs/nginx.conf)
   * PM2 
     * By default Node app uses only one CPU core. Use ecosystem config to distribute load
-      * Example config (here)[#]
+      * Example config [here](configs/ecosystem.config.js)
     * Automatically start on startup of server
       * type `pm2 startup` then follow the instructions given by terminal
       * keep in mind, for every linux user, pm2 save list located in their home folder
