@@ -1,11 +1,11 @@
 # This tutorial describes steps needed to deploy Nodejs app to AWS EC2 Ubuntu
 
-### We need AWS account, ready to deploy Nodejs app and a little bit of brain.
+### We need AWS account, ready to deploy Nodejs app.
 
 ## STEP 1 (warm up)
   * Create Ubuntu instance with prefered memory and storage. In my case it is 8 GB memory and 250 GB SSD.
   * Assign security group with rules. In my case, i added http, http2, ssh.
-  * Create key-pair and download it (SAVE IT SOMEWHERE, WE NEED THAT).
+  * Create key-pair and download it (SAVE IT SOMEWHERE, WE NEED LATER).
   * Wait for instance to come online(3-5 mins)
   * If instance name is empty, double-click on it and write something(Ubuntu, etc)
   
